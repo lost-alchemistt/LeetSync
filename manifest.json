@@ -2,10 +2,16 @@
   "manifest_version": 3,
   "name": "LeetSync",
   "version": "1.0",
-  "permissions": ["webRequest"],
-  "host_permissions": ["https://leetcode.com/*", "https://api.github.com/*"],
+  "permissions": [
+    "webRequest",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://api.github.com/*"
+  ],
   "background": {
     "service_worker": "background.js",
-    "type": "module" 
+    "type": "module"
   }
 }
